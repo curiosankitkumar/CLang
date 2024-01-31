@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /*int main(){
     int age;
     printf("enter age :");
@@ -565,68 +565,90 @@ int main (){
 
 // Q--Write a C program to input all sides of a triangle and check whether triangle is valid or not.
 
-int main (){
+/*int main()
+{
+    int sde1, sde2, sde3;
+    printf("enter 1st sides: ");
+    scanf("%d",&sde1);
 
+    printf("enter 2nd sides: ");
+    scanf("%d",&sde2);
+
+    printf("enter 3rd sides: ");
+    scanf("%d",&sde3);
+    if((sde1+sde2)>sde3 && (sde2+sde3)>sde1 && (sde1+sde3)>sde2){
+        printf("valid triangle");
+    }
+    else{
+        printf("invalid triangle");
+    }
+    return 0;
+}
+*/
+
+// Q-- Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+/*int main () 
+{
     int side1, side2, side3;
-    printf("Enter three side of a triangle: \n");
-    scanf("%d%d%%d" , &side1 , side2, side3);
+    printf("enter 1st sides: ");
+    scanf("%d", &side1);
 
-     if((side1 + side2) > side3)
+    printf("enter 2nd sides: ");
+    scanf("%d", &side2);
+
+    printf("enter 3rd sides: ");
+    scanf("%d", &side3);
+
+    if ((side1 == side2) && (side2 == side3)) 
     {
-        if((side2 + side3) > side1)
-        {
-            if((side1 + side3) > side2)
-            {
-       printf("Triangle is valid.");
-            }
-            else
-            {
-                printf("Triangle is not valid.");
-            }
-        }
-        else
-        {
-            printf("Triangle is not valid.");
-        }
+        printf("The triangle is equilateral.");
+    }
+    else if ((side1 == side2) || (side1 == side3) || (side2 == side3)) 
+    {
+        printf("The triangle is isosceles");
+    }
+    else 
+    {
+        printf("The triangle is scalene");
+    }
+*/
+
+// Q-- Write a C program to find all roots of a quadratic equation.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a, b, c;
+    printf("a: ");
+    scanf("%d", &a);
+
+    printf("b: ");
+    scanf("%d", &b);
+
+    printf("c: ");
+    scanf("%d", &c);
+
+    float disc = pow(b, 2) - 4 * a * c;
+
+    if (disc == 0)
+    {
+        printf("both roots are real and equal: %f and %f", (float)(-b) / (2 * a), (float)(-b) / (2 * a));
+    }
+    else if (disc > 0)
+    {
+        printf("both roots are real and different: %f and %f", (-b + sqrt(disc)) / (2 * a), (-b - sqrt(disc)) / (2 * a));
     }
     else
     {
-        printf("Triangle is not valid.");
+        float realPart = (float)(-b) / (2 * a);
+        float imaginaryPart = sqrt(-disc) / (2 * a);
+        printf("both roots are complex: %f + %fi and %f - %fi", realPart, imaginaryPart, realPart, imaginaryPart);
     }
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
