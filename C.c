@@ -615,7 +615,9 @@ int main (){
 */
 
 // Q-- Write a C program to find all roots of a quadratic equation.
-#include <stdio.h>
+
+
+/*#include <stdio.h>
 #include <math.h>
 
 int main()
@@ -649,128 +651,199 @@ int main()
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
+
+// Q--Write a program to check whether a given character is Alphabet or not using if else statement 
+
+// Note: Check for both upper and lower case characters
+/*
+#include<stdio.h>
+
+ int main (){
+    char ch;
+    printf("Enter a character:");
+    scanf("%c" , &ch);
+
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+    {
+        printf("%c is an alphabet." , ch );
+    }
+    else{
+        printf("%c is an not alphabet.", ch);
+    }
+    return 0;
+}
+*/
+
+// Q-- Write a C program to calculate profit or loss.
+/*
+#include<stdio.h>
+#include<math.h>
+
+int main ()
+{
+    int cp , sp , amt ;
+    printf("Enter cost price : ");
+    scanf("%d", &cp);
+
+    printf("Enter selling price : ");
+    scanf("%d", &sp);
+
+
+    if (sp > cp)   {
+        amt = cp - sp ;
+        printf("profit = %d" , amt);
+
+    }
+    else if (cp > sp)
+    {
+        amt = sp - cp ; 
+        printf("loss = %d" , amt);
+    }
+    else {
+        printf("no profit no loss");
+    }
+}
+*/
+
+//Q-- Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.
+// Calculate percentage and grade according to following:
+
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+
+/*
+#include<stdio.h>
+#include<math.h>
+
+int main (){
+    float Phy;
+    float Che;
+    float Bio;
+    float Mth;
+    float com;
+
+    float per=0;
+    printf("enter five subject marks: ");
+    scanf("%f \n", &Phy);
+    scanf("%f \n", &Che);
+    scanf ("%f \n", &Bio);
+    scanf("%f \n", &Mth);
+    scanf("%f \n", &com);
+    printf("%f %f %f %f %f %f\n",per,Phy,Che,Bio,Mth,com);
+    per = (Phy + Che + Bio + Mth + com) / 5.0;
+
+    printf("percentage = %f\n", per);
+    
+    if (per >= 90){
+        printf("Garde A");
+    }
+    else if (per >= 80){
+        printf("Grade B");
+    }
+    else if (per >= 70){
+        printf("Grade C");
+    }
+    else if (per >= 60){
+        printf("Grade D");
+    }
+    else if (per >= 40){
+        printf("Grade E");
+    }
+    
+    else {
+        printf("Grade A++");
+    }
+    
+    return 0;
+
+}
+*/
+
+// Q-- Write a C program to input basic salary of an employee and calculate its Gross salary according to following:
+// Basic Salary <= 10000 : HRA = 20%, DA = 80%
+// Basic Salary <= 20000 : HRA = 25%, DA = 90%
+// Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+/*
+
+#include<stdio.h>
+
+int main (){
+    float gross, basics, hra, da;
+    printf("Enter a basics salary of a employee: ");
+    scanf("%f", &basics);
+
+    if (basics <= 10000)
+    {
+        da = basics * 0.8;
+        hra = basics * 0.2;
+    }
+    else if (basics <= 20000)
+    {
+        da = basics * 0.9;
+        hra = basics * 0.25;
+    }
+    else 
+    {
+        da = basics * 0.95;
+        hra = basics * 0.3;
+
+        gross = basics + hra + da;
+        printf("GROSS SALARY OF EMPLOYEE = %.2f",gross);
+    }
+    return 0 ;
+}
+*/
+// Q--Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition:
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit
+// An additional surcharge of 20% is added to the bill
+
+#include<stdio.h>
+
+int main () 
+{
+    int unit ;
+    float amt, total_amt , sur_charge;
+
+    printf("Enter total units consumed: ");
+    scanf("%d", &unit);
+
+    if (unit <= 50) 
+    {
+        amt = unit * 0.50;
+    }
+    else if (unit <= 150);
+    {
+        amt = 25 + ((unit-50) * 0.75);   
+    }
+    else if(unit <= 250)
+    {
+        amt = 100 + ((unit-150) * 1.20);
+    }
+    else
+    {
+        amt = 220 + ((unit-250) * 1.50);
+    }
+
+    /*
+     * Calculate total electricity bill
+     * after adding surcharge
+     */
+    sur_charge = amt * 0.20;
+    total_amt  = amt + sur_charge;
+
+    printf("Electricity Bill = Rs. %.2f", total_amt);
+
+    return 0;
+}
 
 
 
