@@ -623,13 +623,6 @@ int main()
 
 // Input number: 12345
 
-#include<stdio.h>
-int main ()
-{
-    int n , temp = 0, frist , last ;
-    printf("Enter any number: ");
-    scanf("%d" ,n); 
-}
 
 
 
