@@ -403,19 +403,59 @@
 //     return 0 ;
 // }
 
+// #include<stdio.h>
+// int main (){
+//     int i , n ;
+//     printf("Enter any number: ");
+//     scanf("%d", &n);
+//     int count;
+
+//     for (count=0; n != 0; count++){
+//         n = n /10;
+//     }
+//     printf("%d", count);
+//     //
+// }
+
+// Q.11- Write a C program to input a number from user and find first and last digit of number using loop.
+//  How to find first and last digit of a number in C programming. Logic to find first and last 
+//  digit of a given number without using loop in C program.
+
+// Example Input
+
+// Input number: 1234
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n, lastDigit;
+    
+//     printf("Enter any number: ");
+//     scanf("%d", &n);
+    
+//     lastDigit = n % 10;
+
+//     printf("Last digit = %d", lastDigit);
+
+//     return 0;
+// }
+
+
 #include<stdio.h>
-int main (){
-    int i , n ;
+int main ()
+{
+    int n , frist;
     printf("Enter any number: ");
     scanf("%d", &n);
-    int count;
 
-    for (count=0; n != 0; count++){
-        n = n /10;
+    while (frist >= 10)
+    {
+        frist = frist / 10;
     }
-    printf("%d", count);
-    //
-}
+    printf("%d", frist);
 
+    return 0 ;
+}
 
 
