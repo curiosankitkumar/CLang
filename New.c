@@ -442,20 +442,67 @@
 // }
 
 
-#include<stdio.h>
-int main ()
+// #include<stdio.h>
+// int main ()
+// {
+//     int n , frist;
+//     printf("Enter any number: ");
+//     scanf("%d", &n);
+
+//     while (frist >= 10)
+//     {
+//         frist = frist / 10;
+//     }
+//     printf("%d", frist);
+
+//     return 0 ;
+// }
+
+// Q.12-Write a C program to find sum of first and last digit of a number.
+
+// #include<stdio.h>
+
+// int main()
+// {
+//     int num, first_digit, last_digit;
+
+//     printf("enter num : ");
+//     scanf("%d",&num);
+
+//     last_digit = num%10;
+//     printf("\nlastdigit: %d\n",last_digit);
+//     int temp = num;
+//     while(temp>10){
+//         temp/=10;
+//     }
+
+//     first_digit = temp;
+//     printf("\nfirst digit: %d\n",first_digit);
+//     printf("\nsum = %d",first_digit+last_digit);
+//     return 0;
+// }
+
+// Q.13-Write a C program to swap first and last digits of a number.
+
+ #include<stdio.h>
+
+int main()
 {
-    int n , frist;
-    printf("Enter any number: ");
-    scanf("%d", &n);
+    int num, first_digit, last_digit;
 
-    while (frist >= 10)
-    {
-        frist = frist / 10;
+    printf("enter num : ");
+    scanf("%d",&num);
+
+    last_digit = num%10;
+    printf("\nlastdigit: %d\n",last_digit);
+    int temp = num;
+    while(temp>10){
+        temp/=10;
     }
-    printf("%d", frist);
 
-    return 0 ;
+    first_digit = temp;
+    printf("\nfirst digit: %d\n",first_digit);
+    printf("\nsum = %d",first_digit+last_digit);
+    
+    return 0;
 }
-
-
