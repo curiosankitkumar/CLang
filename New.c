@@ -484,25 +484,101 @@
 
 // Q.13-Write a C program to swap first and last digits of a number.
 
- #include<stdio.h>
+//  #include<stdio.h>
 
-int main()
-{
-    int num, first_digit, last_digit;
+// int main()
+// {
+//     int num, first_digit, last_digit;
 
-    printf("enter num : ");
-    scanf("%d",&num);
+//     printf("enter num : ");
+//     scanf("%d",&num);
 
-    last_digit = num%10;
-    printf("\nlastdigit: %d\n",last_digit);
-    int temp = num;
-    while(temp>10){
-        temp/=10;
-    }
-
-    first_digit = temp;
-    printf("\nfirst digit: %d\n",first_digit);
-    printf("\nsum = %d",first_digit+last_digit);
+//     last_digit = num%10;
+//     printf("\nlastdigit: %d\n",last_digit);
+//     int temp = num;
+//     while(temp>10){
+//         temp/=10;
+//     }
     
-    return 0;
-}
+//     first_digit = temp;
+//     printf("\nfirst digit: %d\n",first_digit);
+//     printf("\nsum = %d",first_digit+last_digit);
+    
+    
+//     return 0;
+// }
+
+// #include<stdio.h>
+
+// int main (){
+//     int i, num;
+//     printf("Enter number: ");
+//     scanf("%d", &num);
+//     int sum =0;
+
+//     for (i=1;i <= num;i++)
+//     {
+//         sum+=i;
+       
+//     }
+//      printf("%d\n",sum);
+//     return 0;
+// }
+
+//  Q.14- Write a C program to calculate sum of digits of a number.
+
+// #include<stdio.h>
+// int main ()
+// {
+//     int i , n , sum = 0;
+//     printf("Enter number:");
+//     scanf("%d", &n);
+
+//     for (i=1; i<=n; i++)
+//     {
+//         sum += i;
+//     }
+//     printf("%d\n", sum);
+//     return 0 ;
+// }
+
+// #include<stdio.h>
+// int main ()
+// {
+//     int i , n , sum = 0;
+//     printf("Enter number:");
+//     scanf("%d", &n);
+
+//     i = 1;
+//     while (i <= n){
+//         sum += i;
+//         i++;
+//     }
+//     printf("%d\n", sum);
+
+//     return 0;
+// }
+
+// Q.15-Write a C program to calculate product of digits of a number.
+
+// #include<stdio.h>
+
+// int main()
+// {
+//     int product, rem, num;
+
+//     printf("num : ");
+//     scanf("%d",&num);
+
+//     product=1;
+//     while(num>10){
+//         rem=num%10;
+//         product*=rem;
+//         num = num/10;
+//     }
+
+//     printf("%d",product);
+// }
+
+// Q.16-Write a C program to enter a number and print its reverse.
+
