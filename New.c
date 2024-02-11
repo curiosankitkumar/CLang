@@ -582,3 +582,60 @@
 
 // Q.16-Write a C program to enter a number and print its reverse.
 
+// #include<stdio.h>
+// int main ()
+// {
+//     int i , n ;
+//     printf("Enter any number: ");
+//     scanf("%d",&n);
+
+//     int reverse = 0;
+//     while (n!=0)
+//     {
+//         reverse =  (reverse * 10) + (n % 10);
+//         n /= 10; 
+//     }
+//     printf("%d", reverse);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main ()
+// {
+//     int i, n, reverse = 0;
+//     printf("Enter any number:");
+//     scanf("%d", &n);
+
+//     for (i=0;n!=0;n /= 10)
+//     {
+//         reverse = (reverse * 10) + (n % 10);
+        
+//     }
+//     printf("%d", reverse);
+//     return 0 ;
+// }
+
+// Q.17-Write a C program to check whether a number is palindrome or not.
+
+// #include<stdio.h>
+
+// int main ()
+// {
+//     int i , n , reverse = 0;
+//     printf("Enter num: ");
+//     scanf("%d", &n);
+
+//     i = n ;
+//     while (i!=0)
+//     {
+//         reverse = (reverse * 10) + (i % 10);
+//         i /= 10;
+//     }
+//     if (reverse == n){
+//         printf("%d is a palindrome digit", n);
+//     }
+//     else{
+//         printf("%d is not a palindrome digit", n);
+//     }
+// }
+
