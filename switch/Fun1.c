@@ -203,20 +203,112 @@
 
 // Q -- Factorial of n.
 
+// #include<stdio.h>
+
+// int fact (int n);
+
+// int main (){
+//     printf("factorail is : %d", fact(4));
+//     return 0 ;
+// }
+
+// int fact (int n ) {
+//     if (n==0){
+//         return 1;
+//     }
+//     int factNm1 = fact(n-1);
+//     int factN = factNm1 * n ;
+//     return factN;
+// }
+
+// Q-- write a function to convert celsius to fahrenheit.
+
+// #include<stdio.h>
+
+// float convertTemp(float celsius);
+
+// int main (){
+//     float far = convertTemp(32);
+//     printf("far : %f", far);
+//     return 0 ; 
+// }
+// float convertTemp(float celsius){
+//     float far = celsius * (9.0/5.0) + 32 ;
+//     return far ;
+// }
+
+// Q- Write a function to calculate percentage of a student from Marks in Science ,Math & Sanskrit.
+
+// #include<stdio.h>
+
+// int calcPercentage(int science, int math, int sanskrit);
+
+// int main (){
+//     int sc = 46;
+//     int mth = 54;
+//     int sanskrit = 89;
+//     printf("%d", calcPercentage(sc , mth , sanskrit));
+//     return 0 ;
+
+// }
+// int calcPercentage(int science , int math, int sanskrit){
+//     return ((science + math + sanskrit)/ 3);
+    
+// }
+
+// Q- Write a function to print n terms of the fibonacci sequence.
+
+// #include<stdio.h>
+
+// int fib (int n );
+
+// int main (){
+//     printf("%d",fib(6));
+//     return 0;
+// }
+// int fib (int n) {
+//     if (n==0){
+//         return 0;
+//     }
+//     if (n==1){
+//         return 1;
+
+//     }
+//     int fibNm1 = fib(n-1);
+//     int fibNm2 = fib(n-2);
+//     int fibN = fibNm1 + fibNm2;
+//     // printf("fib of %d is : %d \n", n ,fibN);
+//     return fibN;
+// }
+
+// Q--Write a function to find sum of digits of a number.
+
+// Q--write a function to find square root of a number.
+
+// Q--wite a function to print "Hot" or "cold" depend on the temperature user enters.
+
+// Q--Make your own pow function.
+
+//  Q.1-Write a C program to find cube of any number using function.
+
 #include<stdio.h>
 
-int fact (int n);
+double cube(double num);
 
 int main (){
-    printf("factorail is : %d", fact(4));
-    return 0 ;
-}
+    int num ;
+    double c;
 
-int fact (int n ) {
-    if (n==0){
-        return 1;
-    }
-    int factNm1 = fact(n-1);
-    int factN = factNm1 * n ;
-    return factN;
+    printf("Enter number:");
+    scanf("%d", &num);
+
+    c = cube (num);
+
+    printf("%d is %.2f", num,c);
+}
+double cube(double num)
+{
+    // double c = num * num * num;
+    // return c;
+    return (num * num * num)
 }
