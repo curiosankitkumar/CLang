@@ -291,24 +291,24 @@
 
 //  Q.1-Write a C program to find cube of any number using function.
 
-#include<stdio.h>
+// #include<stdio.h>
 
-double cube(double num);
+// double cube(double num);
 
-int main (){
-    int num ;
-    double c;
+// int main (){
+//     int num ;
+//     double c;
 
-    printf("Enter number:");
-    scanf("%d", &num);
+//     printf("Enter number:");
+//     scanf("%d", &num);
 
-    c = cube (num);
+//     c = cube (num);
 
-    printf("%d is %.2f", num,c);
-}
-double cube(double num)
-{
-    // double c = num * num * num;
-    // return c;
-    return (num * num * num)
-}
+//     printf("%d is %.2f", num,c);
+// }
+// double cube(double num)
+// {
+//     // double c = num * num * num;
+//     // return c;
+//     return (num * num * num);
+// }
