@@ -312,3 +312,112 @@
 //     // return c;
 //     return (num * num * num);
 // }
+// #include <stdio.h> 
+// int main() { 
+//     int n = 16; 
+//     switch(n >> 4) { 
+//         case 4:  
+//             printf("Four "); 
+//         case 3:  
+//             printf("Three "); 
+//         default:  
+//             printf("This case is default "); 
+//     } 
+//     return 0; 
+// } 
+
+// #include <stdio.h>
+    
+// int main() {
+//     int i = 5;
+//     while (i > 0) {
+//         printf("%d ", i--);
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main() {
+//     int i = 3;
+//     switch(i) {
+//         case 1: 
+//         printf("Ram");
+//         break;
+//         case 2:
+//         printf("Joseph");
+//         break;
+//         case 3:
+//         printf("Raju");
+//         break;
+//         default: 
+//         printf("Bala");
+//     }
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     for (int x = 1; x <= 2; x++) {
+//         for (int y = 2; y >= 1; y--) {
+//             printf("%d ", x * y);
+//         }
+//     }
+//    return 0;
+// }
+
+// #include <stdio.h> 
+// int main() { 
+//     int count = 0, n = 100, sum = 0; 
+//     do { 
+//         sum += n; 
+//         n /= 2; 
+//         count++; 
+//     } 
+//     while (n >= 1); 
+//     printf("%d", count); 
+//     return 0; 
+// }
+
+// #include <stdio.h>
+    
+// int main() {
+//     int i = 0;
+//     while (i < 3) {
+//         printf("Night ");
+//         i++; 
+//     }
+//     printf("Day");
+//     return 0;
+// }
+// #include <stdio.h> 
+// int main() { 
+//     int a = 4, b = 4, c = 3; 
+//     if (a + b +c == 8) 
+//         printf("Sum is 8"); 
+//     else 
+//         printf("Sum is not 8"); 
+//     return 0; 
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int a = 10, b = 15;
+//     if (a % b == 15)
+//         printf("A");
+//     else if (a % b == 5)
+//         printf("B");
+//     else
+//         printf("NA");
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int s = 0;
+//     for (; s < 5; s++) {
+//         printf("%d ", s);
+//     }
+//     printf("\n%d", s);
+//     return 0;
+// }
