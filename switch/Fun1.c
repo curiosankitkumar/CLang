@@ -421,3 +421,40 @@
 //     printf("\n%d", s);
 //     return 0;
 // }
+
+// Write a C program to input any number from user and find cube of the given number using function. 
+// How to find cube of a given number using function in C programming. Write a C function to find 
+// cube of a given number.
+
+// Example Input
+
+// Input any number: 5
+
+// #include <stdio.h>
+
+// /* Function declaration */
+// double cube(double num);
+
+// int main()
+// {
+//     int num;
+//     double c;
+    
+//     /* Input number to find cube from user */
+//     printf("Enter any number: ");
+//     scanf("%d", &num);
+    
+//     c = cube(num);
+
+//     printf("Cube of %d is %.2f", num, c); 
+    
+//     return 0;
+// }
+
+// /**
+//  * Function to find cube of any number
+//  */
+// double cube(double num)
+// {
+//     return (num * num * num);
+// }
